@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../../resources/fonts/Pretendard-Thin.woff2") format("woff2"), url("../../resources/fonts/Pretendard-Thin.woff") format("woff"), url("../../resources/fonts/Pretendard-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}  
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../../resources/fonts/Pretendard-ExtraLight.woff2") format("woff2"), url("../../resources/fonts/Pretendard-ExtraLight.woff") format("woff"), url("../../resources/fonts/Pretendard-ExtraLight.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}  
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../../resources/fonts/Pretendard-Light.woff2") format("woff2"), url("../../resources/fonts/Pretendard-Light.woff") format("woff"), url("../../resources/fonts/Pretendard-Light.ttf") format("truetype");
+    font-weight: 350;
+    font-style: normal;
+}  
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../../resources/fonts/Pretendard-Regular.woff2") format("woff2"), url("../../resources/fonts/Pretendard-Regular.woff") format("woff"), url("../../resources/fonts/Pretendard-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}  
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../../resources/fonts/Pretendard-Medium.woff2") format("woff2"), url("../../resources/fonts/Pretendard-Medium.woff") format("woff"), url("../../resources/fonts/Pretendard-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../../resources/fonts/Pretendard-SemiBold.woff2") format("woff2"), url("../../resources/fonts/Pretendard-SemiBold.woff") format("woff"), url("../../resources/fonts/Pretendard-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../../resources/fonts/Pretendard-Bold.woff2") format("woff2"), url("../../resources/fonts/Pretendard-Bold.woff") format("woff"), url("../../resources/fonts/Pretendard-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../../resources/fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("../../resources/fonts/Pretendard-ExtraBold.woff") format("woff"), url("../../resources/fonts/Pretendard-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../../resources/fonts/Pretendard-Black.woff2") format("woff2"), url("../../resources/fonts/Pretendard-Black.woff") format("woff"), url("../../resources/fonts/Pretendard-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* reset */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;} /* vertical-align:baseline; */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{font-family:'Pretendard', 'Noto Sans KR', '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', sans-serif;font-size:100%;font-weight:400;color:var(--gray555-color);line-height:1.5;letter-spacing:-0.0375em;word-wrap:break-word;word-break:keep-all;-webkit-text-size-adjust:none;-ms-text-size-adjust:100%;text-size-adjust:none;}
+
+/* basic tags selector */
+img{max-width:100%;height:auto;vertical-align:middle;}
+strong, b{font-family:inherit;font-weight:700;}
+em,address{font-style:normal;}
+blockquote,q{quotes:none;}
+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none;}
+ol,ul,li{list-style:none;}
+table{width:100%;border-collapse:collapse;border-spacing:0;}/* table-layout:fixed; */
+fieldset, legend{background-color:transparent;}
+caption, legend, .blind{position:absolute !important;height:1px !important;width:1px !important;overflow:hidden !important;clip:rect(1px 1px 1px 1px) !important;clip:rect(1px,1px,1px,1px) !important;}
+a{color:inherit;text-decoration:none;cursor:pointer;}
+button{border:none;box-shadow:none;background:transparent;cursor:pointer;outline:none;border-radius:0;font-size:inherit;font-family:inherit;color:inherit;}
+button:focus{outline-style:auto;outline: 2px solid -webkit-focus-ring-color;}
+
+/* 아이폰(사파리) 터치 메뉴 활성화 관련 */
+a, button, [role=button], [role=link], [role=tab]{-webkit-touch-callout:none;}
+
+/* form select */
+input,textarea,select,button{box-sizing:border-box;border:none;outline-style:none;border-radius:0;font-size:inherit;font-family:inherit;color:inherit;}/* -webkit-appearance:none;-moz-appearance:none;appearance:none; */
+input[type='text'], input[type='password']{resize:none;box-shadow:none !important;border-radius:0;outline:none;}
+input:checked{-webkit-appearance:checkbox;}
+input[type='text']::-ms-clear, input[type='tel']::-ms-clear{display:none;}
+input[disabled], select[disabled], input[readonly], textarea[disabled], button[disabled] {cursor:default;}
+input, textarea{-webkit-tap-highlight-color:rgba(0, 0, 0, 0)}
+select{vertical-align:middle;border-radius:0;outline:none;background:transparent;}
+select::-ms-expand{display:none;}
+
+@media all and (max-width:800px){
+	.ios-os input[type="text"],
+	.ios-os input[type="search"],
+	.ios-os input[type="password"],
+	.ios-os input[type="file"],
+	.ios-os input[type="email"],
+	.ios-os select,.ios-os textarea{-webkit-appearance: none;-moz-appearance: none;appearance: none;border-radius:0;}
+}
+
+/* checkbox, radio 이미지형 */
+input[type='radio'],
+input[type='checkbox']{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
+
+/* input textarea focus */
+input[type='text'], input[type='password'], textarea{transition:all 0.1s ease-in-out !important;}
+input[type='text']:focus, input[type='password']:focus,textarea:focus{border:2px solid #555 !important;}
+
+/* placeholder, focus */
+::placeholder{font-size:inherit;color:#999;letter-spacing:-0.0375em;opacity:1;}
+::-webkit-input-placeholder{font-size:inherit;color:#999;letter-spacing:-0.0375em;opacity:1;}
+:-moz-placeholder{font-size:inherit;color:#999;letter-spacing:-0.0375em;opacity:1;}
+::-moz-placeholder{font-size:inherit;color:#999;letter-spacing:-0.0375em;opacity:1;}
+:-ms-input-placeholder{font-size:inherit;color:#999;letter-spacing:-0.0375em;opacity:1;}
+
+input[type='text']:focus::-webkit-input-placeholder{visibility:hidden}
+input[type='text']:focus:-moz-placeholder{visibility:hidden}
+input[type='text']:focus::-moz-placeholder{visibility:hidden}
+input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
+
+/* 폰트칼라 */
+:root {
+    /* color */
+    --primary-color:#BE1622;
+    --secondary-color:#38384F;
+    --gray222-color:#222;
+    --gray555-color:#555;
+    --gray999-color:#999;
+    --grayddd-color:#ddd;
+    --grayeee-color:#eee;
+    --grayfif3f5-color:#fif3f5;
+
+    /* font size */
+    --font10:0.556rem;
+    --font12:0.667rem;
+    --font14:0.778rem;
+    --font15:0.833rem;
+    --font16:0.889rem;
+    --font18:1rem;
+    --font20:1.111rem;
+    --font22:1.222rem;
+    --font24:1.333rem;
+    --font26:1.444rem;
+    --font28:1.556rem;
+    --font30:1.667rem;
+    --font32:1.778rem;
+    --font34:1.889rem;
+    --font36:2rem;
+    --font38:2.111rem;
+    --font40:2.222rem;
+    --font42:2.333rem;
+    --font44:2.444rem;
+    --font48:2.667rem;
+    --font50:2.778rem;
+    --font52:2.889rem;
+    --font56:3.111rem;
+    --font60:3.333rem;
+    --font64:3.556rem;
+    --font70:3.889rem;
+    --font80:4.444rem;
+    --font90:5rem;
+    --font100:5.556rem;
+    --font110:6.111rem;
+    --font160:8.889rem;
+  }
+
+  /* font-size:var(--gray222-color) */
+
+/********************* 반응형 ***********************/
+html {
+    /* font-size: 125%; */ /* 20px */    
+    font-size: 112.5% !important; /* 18px */
+}
+@media screen and (max-width: 1399.98px) {
+    html {
+        font-size: 112.5% !important; /* 18px */
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    html {
+      font-size: 112.5% !important; /* 18px */
+    }
+  }
+  
+  @media screen and (max-width: 991.98px) {
+    html {
+      font-size: 100% !important; /* 16px */
+    }
+  }
+  
+  @media screen and (max-width: 767.98px) {
+    html {
+      /* font-size: 87.5% !important; */ /* 14px */
+      font-size: 93.8% !important; /* 15px */
+    }
+  }
+  
+  @media screen and (max-width: 575.98px) {
+    html {
+      /* font-size: 75% !important; */ /* 12px */
+      font-size: 87.5% !important; /* 14px */
+    }
+  }
+  
+  /* 
+  https://nekocalc.com/px-to-rem-converter
+  폰트사이즈 18px 기준 rem 단위
+  160px - 8.889rem
+  110px - 6.111rem
+  100px - 5.556rem
+  90px - 5rem
+  80px - 4.444rem
+  70px - 3.889rem
+  64px - 3.556rem
+  60px - 3.333rem
+  56px - 3.111rem
+  52px - 2.889rem
+  50px - 2.778rem
+  48px - 2.667rem
+  44px - 2.444rem
+  42px - 2.333rem
+  40px - 2.222rem
+  38px - 2.111rem
+  36px - 2rem
+  34px - 1.889rem
+  32px - 1.778rem
+  30px - 1.667rem
+  28px - 1.556rem
+  26px - 1.444rem
+  24px - 1.333rem
+  22px - 1.222rem
+  20px - 1.111rem
+  19px - 1.056rem
+  18px - 1rem
+  16px - 0.889rem
+  15px - 0.833rem
+  14px - 0.778rem
+  12px - 0.667rem
+  10px - 0.556rem
+  */
