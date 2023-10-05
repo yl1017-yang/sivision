@@ -5,8 +5,7 @@ body{overflow-x:hidden;}
 .wrap{position:relative;}
 
 /* 본문내용 */
-.main_container{position:relative;overflow:hidden;z-index:1;}
-.container{position:relative;overflow:hidden;z-index:1;}
+.container{position:relative;}
 
 /* 상단 */
 #header_wrap{position:fixed;top:0;left:0;width:100%;z-index:10;}
