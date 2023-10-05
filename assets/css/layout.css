@@ -6,7 +6,7 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 
 .w1920{max-width:1920px;margin:0 auto;}
 .inner{width:1200px;margin:0 auto}
-.content{width:1200px;margin:110px auto 100px;}
+/* .content{width:1200px;margin:110px auto 100px;} */
 .con_title{display:inline-block;position:relative;font-size:var(--size52);font-weight:700;color:var(--gray222);line-height:1.2;margin:6.667rem 0 4.444rem;}
 .con_title span{color:var(--primary)}
 
@@ -87,26 +87,21 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 
 
 /* 서브 */
-.sub_visual{margin-top:100px;height:670px;}
+.sub_visual{position:relative;margin-top:100px;min-height:340px;}
 .sub_visual .inner{position:relative;padding-top:100px;}
 .sub_visual .visual_title h2{font-size:2.222rem;font-weight:700;color:#222;line-height:1;}
 .sub_visual .visual_title h3{font-size:5.556rem;font-weight:700;color:#222;line-height:1;}
-.sub_visual .visual_title p{font-size:1.556rem;color:var(--white);margin-top:180px;text-shadow: 1px 1px rgba(0,0,0,0.8);-webkit-text-shadow: 1px 1px rgba(0,0,0,0.8);}
+
+.bg_visual_about{background:url('/images/about/img_visual_about.jpg') 50% 140px no-repeat;}
+.bg_visual_business{background:url('/images/business/img_visual_business.jpg') center bottom no-repeat;}
+.bg_visual_partners{background:url('/images/partners/img_visual_partners.jpg') center bottom no-repeat;}
 
 /* 서브메뉴 */
-.sub_menu{position:absolute;top:200px;left:50%;transform:translateX(-50%);width:1200px;}
-.sub_menu ul{display:flex;justify-content:flex-end;}
-.sub_menu ul li a{display:block;position:relative;padding:20px 15px;font-weight:500;}
-.sub_menu ul li a:before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:100px;background:var(--white);}
-.sub_menu ul li.on a{color:#8b0029;}
-.sub_menu ul li.on a:before{background:#8b0029;}
-
-.bg_visual_overview{background:url('/images/overview/bg_visual_overview.jpg') center bottom no-repeat;}
-.bg_visual_admission{background:url('/images/admission/bg_visual_admission.jpg') center bottom no-repeat;}
-.bg_visual_curriculum{background:url('/images/curriculum/bg_visual_curriculum.jpg') center bottom no-repeat;}
-.bg_visual_professor{background:url('/images/professor/bg_visual_professor.jpg') center bottom no-repeat;}
-.bg_visual_commuinty{background:url('/images/commuinty/bg_visual_commuinty.jpg') center bottom no-repeat;}
-
+.sub_menu{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:1200px;background:rgba(56,56,79,0.7);border-radius:20px 20px 0 0;overflow:hidden;}
+.sub_menu ul{display:flex;justify-content:space-between;}
+.sub_menu ul li{width:100%;font-weight:500;}
+.sub_menu ul li a{display:block;position:relative;width:100%;padding:20px 0;color:var(--white);text-align:center;}
+.sub_menu ul li.on a{background:var(--white);color:var(--gray222);}
 
 
 /********************* 반응형 ***********************/
