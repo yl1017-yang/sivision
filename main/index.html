@@ -11,26 +11,27 @@
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/layout.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../assets/js/jquery-3.4.1.js"></script>
     <script src="../assets/js/common.js"></script>
     <script>
         $(function() {
             $("#header_wrap").load("../include/header.html", function() {
-                gnbMenu(1,1); //메뉴 페이지 on
+                gnbMenu(1,1);
             });
             $("#footer_wrap").load("../include/footer.html");
         });
     </script>
 </head>
 <body>
-    <main class="wrap">
+    <div class="wrap">
         <!-- 헤더 -->
         <div id="header_wrap"></div>
         <!-- <header role="header_wrap" data-include="../include/header.html"></header> -->
         <!-- //헤더 -->
 
         <!-- 본문내용 -->
-        <div class="main_container">
+        <main class="main_container">
             <section class="main_visual mainSec_div">
                 <div class="inner">
                     <p class="main_visual_txt">
@@ -79,12 +80,12 @@
                     <div class="blue_line"></div>
                 </div>
             </section>
-        </div>
+        </main>
         <!-- //본문내용 -->
 
         <!-- 푸터 -->
         <div id="footer_wrap"></div>
         <!-- //푸터 -->
-    </main>
+    </div>
 </body>
 </html>

@@ -56,6 +56,43 @@
     font-style: normal;
 }
 
+/* 머터리얼 아이콘 */
+/* https://webty.tistory.com/188  https://fonts.google.com/icons */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 
 /* reset */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;} /* vertical-align:baseline; */
@@ -120,51 +157,52 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
 
 /* 폰트칼라 */
 :root {
-    /* color */
-    --primary:#BE1622;
-    --secondary:#38384F;
-    --gray222:#222;
-    --gray555:#555;
-    --gray999:#999;
-    --grayddd:#ddd;
-    --grayeee:#eee;
-    --grayfif3f5:#fif3f5;
+  /* color */
+  --primary:#BE1622;
+  --secondary:#38384F;
+  --gray222:#222;
+  --gray555:#555;
+  --gray999:#999;
+  --grayddd:#ddd;
+  --grayeee:#eee;
+  --grayfif3f5:#fif3f5;
+  --white:#fff;
 
-    /* font size */
-    --font10:0.556rem;
-    --font12:0.667rem;
-    --font14:0.778rem;
-    --font15:0.833rem;
-    --font16:0.889rem;
-    --font18:1rem;
-    --font20:1.111rem;
-    --font22:1.222rem;
-    --font24:1.333rem;
-    --font26:1.444rem;
-    --font28:1.556rem;
-    --font30:1.667rem;
-    --font32:1.778rem;
-    --font34:1.889rem;
-    --font36:2rem;
-    --font38:2.111rem;
-    --font40:2.222rem;
-    --font42:2.333rem;
-    --font44:2.444rem;
-    --font48:2.667rem;
-    --font50:2.778rem;
-    --font52:2.889rem;
-    --font56:3.111rem;
-    --font60:3.333rem;
-    --font64:3.556rem;
-    --font70:3.889rem;
-    --font80:4.444rem;
-    --font90:5rem;
-    --font100:5.556rem;
-    --font110:6.111rem;
-    --font160:8.889rem;
-  }
+  /* font size */
+  --font10:0.556rem;
+  --font12:0.667rem;
+  --font14:0.778rem;
+  --font15:0.833rem;
+  --font16:0.889rem;
+  --font18:1rem;
+  --font20:1.111rem;
+  --font22:1.222rem;
+  --font24:1.333rem;
+  --font26:1.444rem;
+  --font28:1.556rem;
+  --font30:1.667rem;
+  --font32:1.778rem;
+  --font34:1.889rem;
+  --font36:2rem;
+  --font38:2.111rem;
+  --font40:2.222rem;
+  --font42:2.333rem;
+  --font44:2.444rem;
+  --font48:2.667rem;
+  --font50:2.778rem;
+  --font52:2.889rem;
+  --font56:3.111rem;
+  --font60:3.333rem;
+  --font64:3.556rem;
+  --font70:3.889rem;
+  --font80:4.444rem;
+  --font90:5rem;
+  --font100:5.556rem;
+  --font110:6.111rem;
+  --font160:8.889rem;
+}
 
-  /* font-size:var(--gray222) */
+/* font-size:var(--gray222) */
 
 /********************* 반응형 ***********************/
 html {
