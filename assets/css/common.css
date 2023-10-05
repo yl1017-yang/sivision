@@ -97,7 +97,7 @@
 /* reset */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;} /* vertical-align:baseline; */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
-body{font-family:'Pretendard', 'Noto Sans KR', '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', sans-serif;font-size:100%;font-weight:400;color:var(--gray555);line-height:1.5;letter-spacing:-0.0375em;word-wrap:break-word;word-break:keep-all;-webkit-text-size-adjust:none;-ms-text-size-adjust:100%;text-size-adjust:none;}
+body{font-family:'Pretendard', 'Noto Sans KR', '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', sans-serif;font-size:100%;font-weight:400;color:var(--gray555);line-height:1.5;word-wrap:break-word;word-break:keep-all;-webkit-text-size-adjust:none;-ms-text-size-adjust:100%;text-size-adjust:none;}
 
 /* basic tags selector */
 img{max-width:100%;height:auto;vertical-align:middle;}
@@ -169,37 +169,39 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
   --white:#fff;
 
   /* font size */
-  --font10:0.556rem;
-  --font12:0.667rem;
-  --font14:0.778rem;
-  --font15:0.833rem;
-  --font16:0.889rem;
-  --font18:1rem;
-  --font20:1.111rem;
-  --font22:1.222rem;
-  --font24:1.333rem;
-  --font26:1.444rem;
-  --font28:1.556rem;
-  --font30:1.667rem;
-  --font32:1.778rem;
-  --font34:1.889rem;
-  --font36:2rem;
-  --font38:2.111rem;
-  --font40:2.222rem;
-  --font42:2.333rem;
-  --font44:2.444rem;
-  --font48:2.667rem;
-  --font50:2.778rem;
-  --font52:2.889rem;
-  --font56:3.111rem;
-  --font60:3.333rem;
-  --font64:3.556rem;
-  --font70:3.889rem;
-  --font80:4.444rem;
-  --font90:5rem;
-  --font100:5.556rem;
-  --font110:6.111rem;
-  --font160:8.889rem;
+  --size10:0.556rem;
+  --size12:0.667rem;
+  --size14:0.778rem;
+  --size15:0.833rem;
+  --size16:0.889rem;
+  --size18:1rem;
+  --size20:1.111rem;
+  --size22:1.222rem;
+  --size24:1.333rem;
+  --size26:1.444rem;
+  --size28:1.556rem;
+  --size30:1.667rem;
+  --size32:1.778rem;
+  --size34:1.889rem;
+  --size36:2rem;
+  --size38:2.111rem;
+  --size40:2.222rem;
+  --size42:2.333rem;
+  --size44:2.444rem;
+  --size48:2.667rem;
+  --size50:2.778rem;
+  --size52:2.889rem;
+  --size56:3.111rem;
+  --size60:3.333rem;
+  --size64:3.556rem;
+  --size70:3.889rem;
+  --size80:4.444rem;
+  --size90:5rem;
+  --size100:5.556rem;
+  --size110:6.111rem;
+  --size120:6.667rem;
+  --size130:7.222rem;
+  --size160:8.889rem;
 }
 
 /* font-size:var(--gray222) */
