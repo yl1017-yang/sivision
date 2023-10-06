@@ -202,6 +202,7 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
   --size120:6.667rem;
   --size130:7.222rem;
   --size160:8.889rem;
+  --size180:10rem;
   --size200:11.111rem;
 }
 

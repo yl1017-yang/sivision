@@ -75,7 +75,7 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 .mo_btn_close:after{content:'';display:block;position:absolute;width:30px;height:2px;left:27%;top:48%;opacity:1;background-color:var(--white);border-radius:10px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);}
 
 /* 하단 */
-#footer_wrap{width:100%;background:var(--gray222);}
+#footer_wrap{width:100%;background:var(--gray222);margin-top:var(--size180);}
 .footer{position:relative;padding:var(--size60) 0}
 .footer .footer_info{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;font-size:var(--size16);color:var(--gray999);}
 .footer .footer_info:nth-of-type(2){border-top:1px solid var(--gray555);margin-top:var(--size40);padding-top:var(--size20);}

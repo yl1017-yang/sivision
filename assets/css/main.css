@@ -88,7 +88,7 @@
 }
 
 /* 오시는길 */
-.main_location{background:url(/images/main/img_main_location.jpg);padding-bottom:var(--size120);}
+.main_location{background:url(/images/main/img_main_location.jpg);padding-bottom:var(--size120);margin-bottom:-10rem;}
 .main_location .con_title{color:var(--white);}
 .main_location .location_wrap{color:var(--white);}
 .main_location .location_wrap span{display:inline-block;margin-right:var(--size50);}
