@@ -19,8 +19,9 @@ $(function() {
 
 function gnbMenu(depth1, depth2, depth3) {
     // PC 네비
-    var $gnb = $('.gnb'),
-        $gnbDep1 = $('.gnbDep1', $gnb);
+    var $gnb = $('.gnb');
+    var $gnbDep1 = $('.gnbDep1', $gnb);
+    var $submenu = $('.sub_menu');
 
     $gnb.on('focusin mouseenter',function(){    	
         $(this).children().find('.gnbDep2').stop().slideDown('200');
@@ -43,8 +44,8 @@ function gnbMenu(depth1, depth2, depth3) {
     if ($gnbDep1.length > depth1-1) {
       $gnbDep1.eq(depth1-1).find('> a').addClass('on');
       $gnbDep1.eq(depth1-1).find('.gnbDep2 > li').eq(depth2-1).find('> a').addClass('on');
+      $submenu.eq(depth1-1).find('li').eq(depth3-1).find('> a').addClass('on');
     }
-
 
 		// 모바일 전체 네비
 		var $moGnbWrap = $('.mo_gnb_wrap'),

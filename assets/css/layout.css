@@ -101,7 +101,7 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 .sub_menu ul{display:flex;justify-content:space-between;}
 .sub_menu ul li{width:100%;font-weight:500;}
 .sub_menu ul li a{display:block;position:relative;width:100%;padding:20px 0;color:var(--white);text-align:center;}
-.sub_menu ul li.on a{background:var(--white);color:var(--gray222);}
+.sub_menu ul li a.on{background:var(--white);color:var(--gray222);}
 
 
 /********************* 반응형 ***********************/

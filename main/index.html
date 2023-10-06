@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../assets/js/jquery-3.4.1.js"></script>
     <script src="../assets/js/common.js"></script>
+
     <script>
         $(function() {
             $("#header_wrap").load("../include/header.html", function() {
@@ -32,9 +33,9 @@
         <main class="container">
             <section class="main_visual">
                 <div class="main_visual_text">
-                    <h3>Total Network</h3>
-                    <h4>Solution</h4>
-                    <p>그건 할 수 없어 라는 말을 들을 때마다 <br>나는 성공이 가까웠음을 안다.</p>
+                    <h3 data-aos="fade-up" data-aos-duration="1000">Total Network</h3>
+                    <h4 data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">Solution</h4>
+                    <p data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">그건 할 수 없어 라는 말을 들을 때마다 <br>나는 성공이 가까웠음을 안다.</p>
                 </div>
                 <figure class="main_visual_img">
                     <img src="../images/main/img_main_visual.jpg" alt="">
@@ -152,5 +153,11 @@
         <div id="footer_wrap"></div>
         <!-- //푸터 -->
     </div>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
