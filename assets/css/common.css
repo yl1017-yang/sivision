@@ -167,6 +167,7 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
   --grayeee:#eee;
   --gray:#f1f3f5;
   --white:#fff;
+  --black:#000;
 
   /* font size */
   --size10:0.556rem;
