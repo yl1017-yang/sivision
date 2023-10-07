@@ -15,14 +15,14 @@
 .main_business{padding-bottom:var(--size120);}
 .main_business .business_card{display:flex;flex-wrap:wrap;justify-content:space-between;}
 .main_business .business_card li{position:relative;margin-bottom:var(--size40);}
-.main_business .business_card li a{position:relative;display:block;width:376px;border-radius:20px;overflow:hidden;}
+.main_business .business_card li a{position:relative;display:block;border-radius:20px;overflow:hidden;} /* width:376px; */
 .main_business .business_card .thumb{position:relative;width:100%;height:100%;}
 .main_business .business_card .thumb:hover:after{content:'';position:absolute;left:0; top:0;width:100%;height:100%;background:rgba(0, 0, 0, 65%);z-index:0;transition:all 0.5s;}
 /* .main_business .business_card .thumb img:hover{height:100%;transition:all 0.3s;transform: scale(1) rotate(0.001deg);} */
 .main_business .business_card .card{position:absolute;top:var(--size70);left:var(--size40);right:var(--size40);bottom:var(--size70);color:var(--white);z-index:1}
-.main_business .business_card .card .title{font-size:var(--size32);font-weight:700;}
-.main_business .business_card .card .desc{font-weight:600;margin-top:var(--size10);}
-.main_business .business_card .card .btn_more{position:absolute;bottom:0;left:0;background:var(--primary);width:var(--size48);height:var(--size48);border-radius:100%;}
+.main_business .business_card .card .title{font-size:var(--size32);font-weight:700;line-height:1.3;}
+.main_business .business_card .card .desc{font-weight:600;margin-top:var(--size20);}
+.main_business .business_card .card .btn_more{position:absolute;bottom:0;left:0;width:var(--size48);height:var(--size48);border-radius:100%;background:var(--primary) url(../../images/icon/icon_arrow_right_20.svg) 50% 50% no-repeat;}
 
 /* 파트너사 */
 .main_partner{background:var(--gray);padding-bottom:var(--size120);overflow:hidden;}
@@ -92,6 +92,7 @@
 .main_location .con_title{color:var(--white);}
 .main_location .location_wrap{color:var(--white);}
 .main_location .location_wrap span{display:inline-block;margin-right:var(--size50);}
+.main_location .location_wrap span i{margin-right:var(--size10);}
 
 
 /* 반응형 */
@@ -104,11 +105,11 @@
 }
 
 @media screen and (max-width: 1399.98px) {
-
 }
 
 @media screen and (max-width: 1199.98px) {
-  
+  .main_visual .main_visual_text{width:100%;}
+  .main_business .business_card li{width:32%;}
 }
 
 @media screen and (max-width: 991.98px) {
