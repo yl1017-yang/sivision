@@ -83,9 +83,9 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 .sub_visual h3{font-size:var(--size50);font-weight:700;color:var(--gray222);padding-top:var(--size70);line-height:1;}
 .sub_visual h4{font-size:var(--size160);font-weight:900;color:rgba(255,255,255,0.7);line-height:0.9;text-align:right;}
 
-.bg_visual_about{background-image:url('/images/about/img_visual_about.jpg');}
-.bg_visual_business{background-image:url('/images/business/img_visual_business.jpg');}
-.bg_visual_partners{background-image:url('/images/partners/img_visual_partners.jpg');}
+.bg_visual_about{background-image:url('../../images/about/img_visual_about.jpg');}
+.bg_visual_business{background-image:url('../../images/business/img_visual_business.jpg');}
+.bg_visual_partners{background-image:url('../../images/partners/img_visual_partners.jpg');}
 
 /* 서브메뉴 */
 .lnb{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:1200px;background:rgba(56,56,79,0.7);border-radius:20px 20px 0 0;overflow:hidden;}
