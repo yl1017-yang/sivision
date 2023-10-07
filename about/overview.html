@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-    <meta name="Description" content=""/>
-    <meta name="Keywords" content=""/>
+    <meta name="Description" content="(주)에스아이비전"/>
+    <meta name="Keywords" content="Total Network Solution, 영상관제 영상회의 솔루션, 스마트 폴, 네트워크 페이징 솔루션, 보안 솔루션, 정보통신 공사 및 유지 보수"/>
     <meta http-equiv="Author" content=""/>
     <title>(주)에스아이비전</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../assets/js/jquery-3.4.1.js"></script>
     <script src="../assets/js/common.js"></script>
     <script>
         $(function() {
             $("#header_wrap").load("../include/header.html", function() {
-                gnbMenu(1, 1, 1);
+                gnbMenu(1, 1);
             });
             $("#footer_wrap").load("../include/footer.html");
         });
@@ -31,12 +30,12 @@
         <main class="container">
             <!-- 서브 비주얼 -->
             <section class="sub_visual bg_visual_about">
-                <div class="inner">
-                    <h3>회사소개</h3>
-                    <h4>ABOUT</h4>
+                <div class="visual_title inner">
+                    <h3 data-aos="fade-up">회사소개</h3>
+                    <h4 data-aos="fade-down" data-aos-delay="300">ABOUT</h4>
                 </div>
-                <div class="sub_menu">
-                    <ul>
+                <div class="lnb">
+                    <ul class="lnbDep1">
                         <li><a href="../about/overview.html">회사 개요</a></li>
                         <li><a href="../about/vision.html">회사 비전</a></li>
                         <li><a href="../about/organization.html">회사 조직도</a></li>
@@ -46,13 +45,13 @@
             <!-- //서브 비주얼 -->
 
             <section class="content inner">
-                <h2 class="con_title">
+                <h5 class="con_title">
                     그건 할 수 없어 라는 말을 들을 때마다 <br>
                     <span>나는 성공이 가까웠음을 안다.</span>
-                </h2>
-                <figure class="overview_con1">
+                </h5>
+                <div class="overview_con1">
                     <img src="../images/about/img_overview01.jpg" alt="">
-                </figure>
+                </div>
                 <div class="overview_con2">
                     <dl>
                         <dt>사업자번호</dt>
@@ -100,5 +99,15 @@
         <div id="footer_wrap"></div>
         <!-- //푸터 -->
     </div>
+
+    <!-- aos 플러그인 -->
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <script src="../assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            // once: true
+        });
+    </script>
 </body>
 </html>

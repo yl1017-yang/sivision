@@ -1,27 +1,13 @@
 // 초기화
 $(function() {
-	// includeLayout();
 	// gnbMenu();
 });
-
-// include
-// function includeLayout() {
-//   var includeArea = $('[data-include]');
-//   var self, url;
-//   $.each(includeArea, function() {
-//     self = $(this);
-//     url = self.data("include");
-//     self.load(url, function() {
-//       self.removeAttr("data-include");
-//     });
-//   });
-// } 
 
 function gnbMenu(depth1, depth2, depth3) {
     // PC 네비
     var $gnb = $('.gnb');
     var $gnbDep1 = $('.gnbDep1', $gnb);
-    var $submenu = $('.sub_menu');
+    var $lnbDep1 = $(".lnb .lnbDep1 > li");
 
     $gnb.on('focusin mouseenter',function(){    	
         $(this).children().find('.gnbDep2').stop().slideDown('200');
@@ -44,7 +30,11 @@ function gnbMenu(depth1, depth2, depth3) {
     if ($gnbDep1.length > depth1-1) {
       $gnbDep1.eq(depth1-1).find('> a').addClass('on');
       $gnbDep1.eq(depth1-1).find('.gnbDep2 > li').eq(depth2-1).find('> a').addClass('on');
-      $submenu.eq(depth1-1).find('li').eq(depth3-1).find('> a').addClass('on');
+    }
+
+    //lnb - 페이지 인식
+    if ($lnbDep1.length > depth2-1) {
+      $lnbDep1.eq(depth2-1).find("a").addClass("on");
     }
 
 		// 모바일 전체 네비

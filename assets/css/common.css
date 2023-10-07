@@ -164,9 +164,15 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
   --size110:6.111rem;
   --size120:6.667rem;
   --size130:7.222rem;
+  --size140:7.778rem;
+  --size150:8.333rem;
   --size160:8.889rem;
   --size180:10rem;
   --size200:11.111rem;
+
+  --size-50:-2.778rem;
+  --size-100:-5.556rem;
+  --size-200:-11.111rem;
 }
 
 /* font-size:var(--gray222) */
