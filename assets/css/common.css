@@ -127,11 +127,13 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
   --gray999:#999;
   --grayddd:#ddd;
   --grayeee:#eee;
-  --gray:#f1f3f5;
+  --gray:#F1F3F5;
   --white:#fff;
   --black:#000;
 
   /* font size */
+  --size6:0.333rem;
+  --size8:0.444rem;
   --size10:0.556rem;
   --size12:0.667rem;
   --size14:0.778rem;
@@ -169,6 +171,11 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
   --size160:8.889rem;
   --size180:10rem;
   --size200:11.111rem;
+  --size220:12.222rem;
+  --size240:13.333rem;
+  --size260:14.444rem;
+  --size280:15.556rem;
+  --size300:16.667rem;
 
   --size-50:-2.778rem;
   --size-100:-5.556rem;

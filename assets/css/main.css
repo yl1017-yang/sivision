@@ -20,7 +20,7 @@
 .main_business .business_card li:nth-child(2){margin-top:var(--size100);}
 .main_business .business_card li:nth-child(5){margin-top:var(--size-100);}
 .main_business .business_card li:nth-child(6){margin-top:var(--size-200);}
-.main_business .business_card li a{position:relative;display:block;border-radius:20px;overflow:hidden;} /* width:376px; */
+.main_business .business_card li a{position:relative;display:block;border-radius:var(--size20);overflow:hidden;} /* width:376px; */
 .main_business .business_card .thumb{position:relative;width:100%;height:100%;}
 .main_business .business_card .thumb:hover:after{content:'';position:absolute;left:0; top:0;width:100%;height:100%;background:rgba(0, 0, 0, 65%);z-index:0;transition:all 0.5s;}
 /* .main_business .business_card .thumb img:hover{height:100%;transition:all 0.3s;transform: scale(1) rotate(0.001deg);} */

@@ -1,11 +1,15 @@
 @charset "utf-8";
 
-
 /* 주요실적 */
 .performance_con{display:flex;justify-content:space-between;}
 .performance_con ul{width:50%;}
 .performance_con ul li{padding:var(--size14) 0;border-bottom:1px solid var(--grayeee);}
 .performance_con ul li:before{content:'ㆍ';}
+
+/* 인증 및 특허 */
+.certification_card{display:flex;gap:0 27px;}
+.certification_card li{flex-basis:280px;border:1px solid var(--grayddd);border-radius:var(--size20);overflow:hidden;}
+.certification_card li img{width:100%;}
 
 /* 파트너사 */
 .partner_con ul{display:flex;flex-wrap:wrap;align-items:center;}
@@ -37,6 +41,9 @@
 
 /* 모바일 */
 @media screen and (max-width: 767.98px) {
+  .certification_card{flex-wrap:wrap;justify-content:space-between;gap:0;}
+  .certification_card li{flex-basis:48%;margin-bottom:var(--size20);}
+
   .performance_con ul{width:100%;}
   .performance_con figure{display:none;}
 }

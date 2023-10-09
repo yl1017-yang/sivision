@@ -1,7 +1,67 @@
 @charset "utf-8";
 
+/* 디비시스 */
 
 /* 영상관제 솔루션 */
+.video_control_con1{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.video_control_con1 > li{display:flex;flex-wrap:wrap;align-content:space-between;position:relative;width:22.7%;margin-bottom:var(--size36);background:var(--gray);border-radius:var(--size20);}
+.video_control_con1 .thumb{position:relative;width:100%;}
+.video_control_con1 .thumb img{width:100%;border-radius:var(--size20);overflow:hidden;}
+.video_control_con1 .card{margin:var(--size40) var(--size20) var(--size10) var(--size30) ;}
+.video_control_con1 .card .title{font-size:var(--size32);font-weight:700;color:var(--gray222);line-height:1.3;}
+.video_control_con1 .card .desc{color:var(--gray999);margin-top:var(--size14);}
+
+/* 영상회의 솔루션 */
+.video_conference_title2{font-size:var(--size28);line-height:1.3;}
+
+.video_conference_con1 > dl{display:flex;flex-wrap:wrap;align-items:center;border-top:1px solid var(--grayeee);margin:var(--size70) 0 var(--size140);}
+.video_conference_con1 > dl dt{display:flex;align-items:center;width:45%;min-height:var(--size240);border-bottom:1px solid var(--grayeee);}
+.video_conference_con1 > dl dt i{display:flex;align-items:center;justify-content:center;width:160px;height:160px;border-radius:100%;background:var(--gray);}
+.video_conference_con1 > dl dt span{display:inline-block;font-size:var(--size32);font-weight:700;color:var(--gray222);margin-left:var(--size40);}
+.video_conference_con1 > dl dd{display:flex;flex-direction:column;justify-content:center;width:55%;min-height:var(--size240);border-bottom:1px solid var(--grayeee);}
+.video_conference_con1 > dl dd p{font-size:var(--size20);font-weight:700;color:var(--gray222);margin-bottom:var(--size8);}
+.video_conference_con1 > dl dd ul li:before{content:'ㆍ';}
+
+.video_conference_con2{background:var(--secondary);padding-bottom:var(--size120);color:var(--white);}
+.video_conference_con2 .con_title{color:var(--white);}
+.video_conference_con2 .con2_box{display:flex;justify-content:space-between;margin-top:var(--size60);}
+.video_conference_con2 .con2_box > figure img{border-radius:var(--size20);}
+.video_conference_con2 .con2_box > ul li{padding:var(--size6) 0;}
+.video_conference_con2 .con2_box > ul li:before{content:'ㆍ';}
+
+.video_conference_con3{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.video_conference_con3 > li{position:relative;width:31%;background:var(--gray);border-radius:var(--size20);}
+.video_conference_con3 .thumb{position:relative;width:100%;}
+.video_conference_con3 .thumb img{width:100%;border-radius:var(--size20);overflow:hidden;}
+.video_conference_con3 .card{margin:var(--size40) var(--size20) var(--size10) var(--size30);}
+.video_conference_con3 .card .title{font-size:var(--size32);font-weight:700;color:var(--gray222);line-height:1.3;}
+.video_conference_con3 .card .desc{color:var(--gray999);margin-top:var(--size14);}
+.video_conference_con3 .card .desc > li:before{content:'ㆍ';}
+
+.video_conference_con4 .card_box{display:flex;flex-wrap:wrap;justify-content:space-between;margin-bottom:var(--size40);}
+.video_conference_con4 .card_box > li{position:relative;width:48.5%;background:var(--gray);border-radius:var(--size20);}
+.video_conference_con4 .card_box .card{margin:var(--size40) var(--size20) var(--size10) var(--size30);}
+.video_conference_con4 .card_box .card .title{font-size:var(--size32);font-weight:700;color:var(--gray222);line-height:1.3;margin-bottom:var(--size38);}
+.video_conference_con4 .card_box .thumb img{border-radius:var(--size20);}
+
+/* 스마트폴 */
+
+/* 네트워크 페이징 솔루션 */
+.network_list{margin-top:var(--size14);}
+.network_list li:before{content:'ㆍ';}
+
+.network_con2{margin:var(--size80) 0 var(--size60)}
+
+/* 보안 솔루션 */
+.security_desc{margin-top:var(--size14);}
+.security_con2{margin:var(--size40) 0 var(--size100);}
+.security_con3{position:relative;padding:var(--size100) 0 var(--size120);margin-bottom:-10rem;;background:var(--secondary);}
+.security_con3 .con_title_dep2{color:var(--white);}
+
+/* 기타 솔루션 */
+
+/* 정보통신 공사 및 유지보수 */
+.maintenance_con{text-align:center;margin-top:var(--size100);}
 
 
 /* 반응형 */
@@ -18,11 +78,12 @@
 }
 
 @media screen and (max-width: 1199.98px) {
-  
+  .video_control_con1 li{width:23%;margin-bottom:var(--size30);}
 }
 
 @media screen and (max-width: 991.98px) {
-
+  .video_control_con1 li{width:48%;}
+  .video_control_con1 .card{margin-bottom:var(--size30);}
 }
 
 /* 모바일 */
@@ -31,7 +92,7 @@
 }
 
 @media all and (max-width: 575.98px) {
-
+  .video_control_con1 li{width:100%;}
 }
 
 @media all and (max-width: 478.98px) {

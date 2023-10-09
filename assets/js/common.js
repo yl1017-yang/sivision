@@ -1,7 +1,7 @@
 // 초기화
-$(function() {
-	// gnbMenu();
-});
+// $(function() {
+// 	gnbMenu();
+// });
 
 function gnbMenu(depth1, depth2, depth3) {
     // PC 네비
@@ -11,7 +11,7 @@ function gnbMenu(depth1, depth2, depth3) {
 
     $gnb.on('focusin mouseenter',function(){    	
         $(this).children().find('.gnbDep2').stop().slideDown('200');
-        $(this).parent().find('.gnbBg').stop().animate({ 'height':'240px' });        
+        $(this).parent().find('.gnbBg').stop().animate({ 'height':'260px' });        
     });
 
     $gnb.on('focusout mouseleave',function(){    	
