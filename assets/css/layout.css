@@ -44,7 +44,7 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 .mo_gnb_wrap .mo_gnb > li > a.on:before{transform:rotate(45deg);}
 .mo_gnb_wrap .mo_gnb > li > a.on:after{transform:rotate(-45deg);}
 
-.mo_gnb_wrap .mo_gnb .depth1 > li > a.on{color:var(--white);font-weight:700;}
+.mo_gnb_wrap .mo_gnb .depth1 > li > a.on{color:var(--white);text-decoration:underline;}
 .mo_gnb_wrap .mo_gnb .depth1 > li > a:before{content:'';position:absolute;right:50px;top:15px;transform:rotate(-45deg);width:2px;height:10px;border-radius:10px;background-color:var(--gray999);transition:0.3s;}
 .mo_gnb_wrap .mo_gnb .depth1 > li > a:after{content:'';position:absolute;right:55px;top:15px;transform:rotate(45deg);width:2px;height:10px;border-radius:10px;background-color:var(--gray999);transition:0.3s;}
 .mo_gnb_wrap .mo_gnb .depth1 > li > a.on:before{transform:rotate(45deg);}
