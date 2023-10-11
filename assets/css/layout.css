@@ -100,6 +100,7 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 .box_type1{background:var(--secondary);border-radius:var(--size20);color:var(--white);padding:var(--size40);}
 .box_type1 .con_title_dep2{color:var(--white);}
 
+
 /********************* 반응형 ***********************/
 @media all and (max-width: 1918.98px) {
 
