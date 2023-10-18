@@ -1,6 +1,13 @@
 @charset "utf-8";
 
 /* 디비시스 */
+.divisys_con{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.divisys_con > li{display:flex;flex-wrap:wrap;align-content:space-between;position:relative;width:22.7%;margin-bottom:var(--size36);background:var(--gray);border-radius:var(--size20);}
+.divisys_con .thumb{position:relative;width:100%;}
+.divisys_con .thumb img{width:100%;border-radius:var(--size20);overflow:hidden;}
+.divisys_con .card{margin:var(--size40) var(--size20) var(--size10) var(--size30) ;}
+.divisys_con .card .title{font-size:var(--size32);font-weight:700;color:var(--gray222);line-height:1.3;}
+.divisys_con .card .desc{color:var(--gray999);margin-top:var(--size14);}
 
 /* 영상관제 솔루션 */
 .video_control_con1{display:flex;flex-wrap:wrap;justify-content:space-between;}
@@ -97,10 +104,14 @@
 }
 
 @media screen and (max-width: 1199.98px) {
+  .divisys_con li{width:23%;margin-bottom:var(--size30);}
   .video_control_con1 li{width:23%;margin-bottom:var(--size30);}
 }
 
 @media screen and (max-width: 991.98px) {
+  .divisys_con li{width:48%;}
+  .divisys_con .card{margin-bottom:var(--size30);}
+
   .video_control_con1 li{width:48%;}
   .video_control_con1 .card{margin-bottom:var(--size30);}
 
@@ -139,6 +150,8 @@
 
 @media all and (max-width: 575.98px) {
   .video_conference_title2{font-size:var(--size20);}
+
+  .divisys_con li{width:100%;}
   .video_control_con1 li{width:100%;}
 
   .video_conference_con1 .con_box > li{display:block;padding:var(--size30) 0;}
