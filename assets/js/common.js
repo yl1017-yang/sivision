@@ -3,6 +3,13 @@
 // 	gnbMenu();
 // });
 
+$(function() {
+  AOS.init({
+      duration: 1200,
+      // once: true
+  });
+});
+
 function gnbMenu(depth1, depth2, depth3) {
     // PC 네비
     var $gnb = $('.gnb');
