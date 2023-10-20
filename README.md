@@ -12,3 +12,6 @@ https://css-tricks.com/the-simplest-ways-to-handle-html-includes/
 https://aosceno.tistory.com/556
 
 https://sjparkk-dev1og.tistory.com/66
+
+
+https://syntaxfix.com/question/58352/common-header-footer-with-static-html
