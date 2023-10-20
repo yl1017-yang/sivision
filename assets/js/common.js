@@ -124,4 +124,3 @@ function gnbMenu(depth1, depth2, depth3) {
         $moGnbLi.eq(depth1-1).addClass('on').children('.depth1').show().children('li').eq(depth2-1).addClass('on').children('.depth2').show();
     }
 }
-
