@@ -25,7 +25,7 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 /* 모바일 전체메뉴 */
 /* body.fixed{overflow:hidden;} 모바일 오픈시 스크롤바 삭제 */
 /* .mo_gnb_bg{display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.3);z-index:0;} */
-.mo_gnb_wrap{display:none;position:fixed;top:0;right:0;width:500px;height:100vh;z-index:50;}
+.mo_gnb_wrap{display:none;position:fixed;top:0;right:0;width:500px;height:100vh;z-index:10;}
 .mo_gnb_wrap .scroll{position:absolute;top:0;right:-100px;width:100%;min-height:100vh;overflow-y:auto;background:var(--secondary);box-shadow:0 -10px 10px rgb(0 0 0 / 20%);} /* right:애니메이션, width:전체화면 */
 
 .mo_gnb_wrap .mo_gnb .depth1, .mo_gnb_wrap .mo_gnb .depth2{display:none;}
