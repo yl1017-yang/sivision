@@ -56,7 +56,7 @@ function gnbMenu(depth1, depth2, depth3) {
     // $moGnbWrap.hide();
     $moBtnOpen.on('click', function(e) {
     		e.preventDefault();
-    		$(this).hide();
+    		// $(this).hide();
         //$('body').addClass('fixed');
         $moGnbWrap.fadeIn(200);
         $moGnbWrap.find('.scroll').stop().animate({right:0}, 300);        
