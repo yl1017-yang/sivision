@@ -3,11 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>www.sivision.co.kr</title>
+<script src="./assets/js/jquery-3.4.1.js"></script>
 </head>
 <body>
 
-<script type="text/javascript">
-    window.location.href="/main/index.html";
+<script>
+    $(function() {
+        setTimeout(function(){
+            document.location.href = "/main/index.html";
+        }, 250);
+    });
 </script>
 
 </body>
