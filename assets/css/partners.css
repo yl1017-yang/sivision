@@ -7,7 +7,7 @@
 .performance_con ul li:before{content:'ㆍ';}
 
 /* 인증 및 특허 */
-.certification_card{display:flex;gap:0 27px;}
+.certification_card{display:flex;flex-wrap:wrap;gap:12px 25px;}
 .certification_card li{flex-basis:280px;border:1px solid var(--grayddd);border-radius:var(--size20);overflow:hidden;}
 .certification_card li img{width:100%;}
 
